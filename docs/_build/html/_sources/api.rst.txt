@@ -1,0 +1,38 @@
+.. _api:
+
+Developer Interface
+===================
+
+.. module:: etl_pipeline
+
+This part of the documentation covers all the interfaces of Requests. For
+parts where Requests depends on external libraries, we document the most
+important right here and provide links to the canonical documentation.
+
+
+Main Interface
+--------------
+
+.. autoclass:: etl_pipeline.pipeline_lib.crawler.base.Crawler
+        :members:
+        :undoc-members:
+        :inherited-members:
+        :show-inheritance:
+
+.. autoclass:: etl_pipeline.pipeline_lib.crawler.base.Resource
+        :members:
+        :undoc-members:
+
+Exceptions
+----------
+
+.. autoexception:: requests.RequestException
+.. autoexception:: requests.ConnectionError
+.. autoexception:: requests.HTTPError
+.. autoexception:: requests.URLRequired
+.. autoexception:: requests.TooManyRedirects
+.. autoexception:: requests.ConnectTimeout
+.. autoexception:: requests.ReadTimeout
+.. autoexception:: requests.Timeout
+.. autoexception:: requests.JSONDecodeError
+
